@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Familia Bistro</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Boldonse&family=Charm:wght@400;700&family=Comforter+Brush&family=Hurricane&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Hem</a></li>
+          <li><a href="/index/menu.html">Meny</a></li>
+          <li><a href="/index/lunch.html">Lunchbuffé</a></li>
+        </ul>
+        <div class="social-icons">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <div id="hero">
+      <video autoplay muted loop id="hero-video">
+        <source src="/Pics/3015488-hd_1920_1080_24fps.mp4" type="video/mp4" />
+        Din webbläsare stödjer inte videouppspelning.
+      </video>
+      <section class="hero-content">
+        <h1>LA FAMILIA BISTRO</h1>
+        <p><em>En plats där smak och passion möts</em></p>
+        <a href="#menu" class="hero-button">Utforska menyn</a>
+      </section>
+    </div>
+
+    <section id="home">
+      <h2>OM OSS</h2>
+      <p>
+        <em>
+          Med kärlek och omsorg tillagar vi mat från grunden. Hos oss står det
+          familjära i fokus, här kan du i lugn och ro sätta dig ned och slappna
+          av, umgås, och njuta av våra internationella rätter med utsökta
+          smaker. Vårt koncept är enkelhet, och med vår kunskap &
+          kvalitetsråvaror erbjuder vi er en njutning av mat med inspiration
+          främst från ett medelhavs-inriktat kök.
+        </em>
+      </p>
+    </section>
+
+    <section id="menu">
+      <h2>Meny</h2>
+      <div class="filter-buttons">
+        <button onclick="filterMenu('starter')">Förrätter</button>
+        <button onclick="filterMenu('main')">Varmrätter</button>
+        <button onclick="filterMenu('dessert')">Desserter</button>
+        <button onclick="filterMenu('all')">Visa Alla</button>
+      </div>
+      <ul class="menu-category">
+        <!-- Förrätter -->
+        <li class="starter">Bruschetta al Pomodoro - 79 kr</li>
+        <li class="starter">Carpaccio di Manzo - 129 kr (Glutenfritt)</li>
+        <li class="starter">Toast Skagen - 109 kr</li>
+        <li class="starter">Vitlöksbröd - 49 kr</li>
+        <li class="starter">Gravad Lax med senapssås - 119 kr (Glutenfritt)</li>
+
+        <!-- Varmrätter -->
+        <li class="main">Plankstek - 275 kr</li>
+        <li class="main">
+          Halstrad Lax med smörslungad sparris - 239 kr (Glutenfritt)
+        </li>
+        <li class="main">Coq au Vin - 215 kr</li>
+        <li class="main">Oxfilé med rödvinssås och pommes - 299 kr</li>
+        <li class="main">Vegetarisk lasagne - 189 kr</li>
+
+        <!-- Desserter -->
+        <li class="dessert">Chokladfondant med vaniljglass - 85 kr</li>
+        <li class="dessert">Crème Brûlée - 95 kr</li>
+        <li class="dessert">Pannacotta med hallonsås - 89 kr</li>
+        <li class="dessert">Lemon Curd Cheesecake - 110 kr</li>
+        <li class="dessert">Tiramisu - 95 kr (Glutenfritt)</li>
+      </ul>
+    </section>
+
+    <hr class="menu-divider" />
+
+    <section id="lunch">
+      <h2>Lunchbuffé</h2>
+      <button onclick="toggleLunch()">Visa/Dölj information</button>
+      <div id="lunch-info" style="display: none">
+        <p>
+          Vår lunchbuffé är det perfekta valet för dig som vill njuta av en
+          smakrik och varierad måltid under veckodagarna. Vi serverar buffén
+          måndag till fredag mellan 11:00 och 14:30, med ett brett urval av
+          rätter som tillagas med färska och noggrant utvalda råvaror.
+        </p>
+        <p>Kika gärna på vår lunch-sektion för mer info.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Kontakta oss</h3>
+          <p>Telefon: +46 8 123 456 78</p>
+          <p>Email: info@lafamiliabistro.se</p>
+        </div>
+        <div class="footer-section">
+          <h3>Följ oss</h3>
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook"></i> Facebook
+          </a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
+        <div class="footer-section">
+          <h3>Öppettider</h3>
+          <p>Måndag - Fredag: 11:00 - 22:00</p>
+          <p>Lördag - Söndag: 12:00 - 23:00</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 La Familia Bistro. Alla rättigheter förbehållna.</p>
+      </div>
+    </footer>
+
+    <script src="/JS/script.js"></script>
+  </body>
+</html>

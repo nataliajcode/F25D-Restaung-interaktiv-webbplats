@@ -51,83 +51,7 @@ nav ul li a {
     font-size: 18px;
     margin-top: 25px;
 }
-
-/* Hero Section */
-#hero {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-#hero-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.hero-content {
-    letter-spacing: 3px;
-    margin-top: 210px;
-    position: relative;
-    z-index: 2;
-    padding: 20px;
-}
-
-.hero-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 15px;
-    background-color: transparent;
-    border: 2px solid white;
-}
-
-.hero-button:hover {
-    background-color: #262525;
-}
-
-/* Section */
-section {
-    padding: 40px;
-    text-align: center;
-    font-size: 30px;
-}
-
-/* Buttons */
-button {
-    font-size: 20px;
-    border: none;
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-    margin: 10px;
-    border-radius: 10px;
-}
-
-button:hover {
-    background-color: #000000;
-    border-radius: 10px;
-}
-
-/*lunch button*/
-#lunch button {
-    background-color:rgb(62, 131, 112);
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 18px;
-    border: 2px solid white;
-    border-radius: 5px;
-}
-
-/* Meny */
+    /* Meny */
 #menu, #lunch, #prices {
     padding: 20px;
     margin: 20px auto;
@@ -136,6 +60,7 @@ button:hover {
     background-color: #000000;
     box-shadow: 0 4px 8px rgba(170, 112, 112, 0.2);
     text-align: center;
+    margin-top: 100px;
 }
 
 #starter-list, #main-course-list, #dessert-list {
@@ -161,29 +86,7 @@ button:hover {
     float: right;
     font-weight: bold;
     color: #d4d4d4;
-}
 
-/* Filter buttons */
-.filter-buttons button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 18px;
-    color: white;
-    background-color: transparent;
-    border: 2px solid white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 10px 15px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.filter-buttons button:hover {
-    background-color: white;
-    color: black;
-}
-
-.filter-buttons button:active {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Styling för menyobjekt */
@@ -193,7 +96,6 @@ button:hover {
     justify-content: center;
     list-style: none;
     padding: 0;
-    
 }
 
 .menu-category li {
@@ -218,7 +120,7 @@ footer {
     color: white;
     padding: 20px 0;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .footer-content {
@@ -229,6 +131,7 @@ footer {
 
 .footer-section {
     width: 30%;
+    margin-top: 130px;
 }
 
 .footer-section h3 {
@@ -258,9 +161,9 @@ footer {
     background-color: #d7c1c1; /* Anpassa färgen om du vill */
     margin: 10px auto; /* Avstånd ovanför och under linjen */
     width: 80%;
-    
+ 
   }
-  
+
   .social-icons {
     font-size: 30px;
     margin-top: 22px;
@@ -286,7 +189,7 @@ footer {
         margin: 10px 0;
     }
 
-    /* Anpassar listor för mindre skärmar */
+    /* Anpassa listor för mindre skärmar */
     #menu-list li, #main-course-list li, #dessert-list li {
         width: 100%; /* Gör att varje rätt tar upp hela bredden på små skärmar */
     }
