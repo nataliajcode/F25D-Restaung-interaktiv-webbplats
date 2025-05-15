@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lunch- La Familia Bistro</title>
+    <title>Lunch - La Familia Bistro</title>
     <link rel="stylesheet" href="/CSS/lunch.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,46 +11,86 @@
       href="https://fonts.googleapis.com/css2?family=Boldonse&family=Charm:wght@400;700&family=Comforter+Brush&family=Hurricane&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .back-to-home {
+        display: none;
+        margin: 1rem;
+      }
+
+      .back-to-home a {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: #333;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      @media (max-width: 768px) {
+        .back-to-home {
+          display: block;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
       <nav>
         <ul>
           <li><a href="/index.html">Hem</a></li>
-          <li><a href="menu.html">Meny</a></li>
+          <li><a href="/index/menu.html">Meny</a></li>
         </ul>
       </nav>
     </header>
 
     <section id="lunch">
       <h2>Lunchbuffé</h2>
-      
-        <p>Vår lunchbuffé är det perfekta valet för dig som vill njuta av en smakrik 
-          och varierad måltid under veckodagarna. Vi serverar buffén måndag till fredag 
-          mellan 11:00 och 14:30, med ett brett urval av rätter som tillagas med färska 
-          och noggrant utvalda råvaror.</p>
-          <h2>Dagens specialerbjudanden</h2>
-        <p>Varje dag erbjuder vi en unik kombination av rätter, där vi varierar smaker och 
-          ingredienser för att ge våra gäster en spännande matupplevelse. 
-          Våra specialerbjudanden kan inkludera:</p>
 
-          <li>En mustig soppa med nybakat bröd</li><br>
-          <li>En säsongsanpassad varmrätt</li><br>
-          <li>Vegetariska och veganska alternativ</li><br>
-          <li>Ett urval av fräscha sallader och tillbehör</li><br>
-          
-          <h2>Prislista</h2>
-
-          <p>Vuxen: 125 kr</p><br>
-          <p>Barn (4-12 år): 75 kr</p><br>
-          <p>Barn under 4 år: Gratis</p><br>
-          <p>Tillval och dryck</p><br>
-          <p>  För att komplettera din måltid erbjuder vi:</p><br>
-          <p>Läsk, mineralvatten eller lättöl: 20 kr</p><br>
-          <p>Kaffe och te: Ingår i buffépriset</p><br>
-          <p>Dessertbuffé: 30 kr extra</p><br>
-          <p>Välkommen att avnjuta en härlig lunchbuffé hos oss!</p><br>        
+      <!-- Tillbaksknapp för små skärmar -->
+      <div class="back-to-home">
+        <a href="/index.html">&#8592; Tillbaka</a>
       </div>
+
+      <p>
+        Vår lunchbuffé är det perfekta valet för dig som vill njuta av en
+        smakrik och varierad måltid under veckodagarna. Vi serverar buffén
+        måndag till fredag mellan 11:00 och 14:30, med ett brett urval av rätter
+        som tillagas med färska och noggrant utvalda råvaror.
+      </p>
+
+      <h2>Dagens specialerbjudanden</h2>
+      <p>
+        Varje dag erbjuder vi en unik kombination av rätter, där vi varierar
+        smaker och ingredienser för att ge våra gäster en spännande
+        matupplevelse. Våra specialerbjudanden kan inkludera:
+      </p>
+      <ul>
+        <li>En mustig soppa med nybakat bröd</li>
+        <li>En säsongsanpassad varmrätt</li>
+        <li>Vegetariska och veganska alternativ</li>
+        <li>Ett urval av fräscha sallader och tillbehör</li>
+      </ul>
+
+      <h2>Allergener och specialkost</h2>
+      <p>
+        Vi tar hänsyn till våra gästers olika behov och erbjuder information om
+        allergener och specialkost. Vänligen meddela vår personal om du har
+        några allergier, intoleranser eller önskemål om specialkost såsom
+        glutenfritt, laktosfritt, vegetariskt eller veganskt. Vi strävar efter
+        att kunna anpassa våra rätter för att alla ska kunna njuta av lunchen
+        tryggt och gott.
+      </p>
+
+      <h2>Prislista</h2>
+      <p>Vuxen: 125 kr</p>
+      <p>Barn (4-12 år): 75 kr</p>
+      <p>Barn under 4 år: Gratis</p>
+      <p><strong>Tillval och dryck</strong></p>
+      <p>För att komplettera din måltid erbjuder vi:</p>
+      <p>Läsk, mineralvatten eller lättöl: 20 kr</p>
+      <p>Kaffe och te: Ingår i buffépriset</p>
+      <p>Dessertbuffé: 30 kr extra</p>
+      <p>Välkommen att avnjuta en härlig lunchbuffé hos oss!</p>
     </section>
 
     <footer>
@@ -65,7 +105,8 @@
           <a
             href="https://www.facebook.com"
             target="_blank"
-            aria-label="Facebook">
+            aria-label="Facebook"
+          >
             <i class="fab fa-facebook"></i> Facebook
           </a>
           <a

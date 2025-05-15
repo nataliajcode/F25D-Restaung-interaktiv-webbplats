@@ -8,7 +8,6 @@ body {
     color: #eeeded;
 }
 
-/* Header */
 header {
     position: absolute;
     width: 100%;
@@ -22,7 +21,6 @@ header {
     backdrop-filter: blur(5px);
 }
 
-/* Navigation */
 nav {
     display: flex;
     justify-content: center;
@@ -52,7 +50,7 @@ nav ul li a {
     margin-top: 25px;
 }
 
-/* Hero Section */
+
 #hero {
     position: relative;
     width: 100%;
@@ -94,14 +92,14 @@ nav ul li a {
     background-color: #262525;
 }
 
-/* Section */
+
 section {
     padding: 40px;
     text-align: center;
     font-size: 30px;
 }
 
-/* Buttons */
+
 button {
     font-size: 20px;
     border: none;
@@ -117,7 +115,7 @@ button:hover {
     border-radius: 10px;
 }
 
-/*lunch button*/
+
 #lunch button {
     background-color:rgb(62, 131, 112);
     display: inline-block;
@@ -127,7 +125,7 @@ button:hover {
     border-radius: 5px;
 }
 
-/* Meny */
+
 #menu, #lunch, #prices {
     padding: 20px;
     margin: 20px auto;
@@ -163,7 +161,6 @@ button:hover {
     color: #d4d4d4;
 }
 
-/* Filter buttons */
 .filter-buttons button {
     display: inline-block;
     padding: 10px 20px;
@@ -186,7 +183,7 @@ button:hover {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Styling för menyobjekt */
+
 .menu-category {
     display: flex;
     flex-wrap: wrap;
@@ -212,7 +209,7 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Footer */
+
 footer {
     background-color: rgb(0, 0, 0);
     color: white;
@@ -251,12 +248,12 @@ footer {
     margin-top: 20px;
 }
 
-/*horisontell linje under meny*/
+
 .menu-divider {
     border: none;
     height: 2px;
-    background-color: #d7c1c1; /* Anpassa färgen om du vill */
-    margin: 10px auto; /* Avstånd ovanför och under linjen */
+    background-color: #d7c1c1; 
+    margin: 10px auto; 
     width: 80%;
     
   }
@@ -265,6 +262,24 @@ footer {
     font-size: 30px;
     margin-top: 22px;
   }
+
+  .hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+  }
+
+  .back-to-home a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.8rem; 
+}
 
 /* Responsiv design */
 @media (max-width: 768px) {
@@ -286,8 +301,44 @@ footer {
         margin: 10px 0;
     }
 
-    /* Anpassar listor för mindre skärmar */
-    #menu-list li, #main-course-list li, #dessert-list li {
-        width: 100%; /* Gör att varje rätt tar upp hela bredden på små skärmar */
+     .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 20;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        z-index: 10;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
     }
 }
+    
+    #menu-list li, #main-course-list li, #dessert-list li {
+        width: 100%; 
+    }
+

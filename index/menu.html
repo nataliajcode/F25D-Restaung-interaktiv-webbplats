@@ -15,14 +15,35 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+      .back-to-home {
+        display: none;
+        margin: 1rem;
+      }
+
+      .back-to-home a {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: #333;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      @media (max-width: 768px) {
+        .back-to-home {
+          display: block;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="index.html">Hem</a></li>
-          <li><a href="meny.html">Meny</a></li>
-          <li><a href="lunch.html">Lunchbuffé</a></li>
+          <li><a href="/index.html">Hem</a></li>
+          <li><a href="/index/menu.html">Meny</a></li>
+          <li><a href="/index/lunch.html">Lunchbuffé</a></li>
         </ul>
         <div class="social-icons">
           <a
@@ -45,6 +66,11 @@
 
     <section id="menu">
       <h2>Meny</h2>
+
+      <div class="back-to-home">
+        <a href="/index.html">&#8592; Tillbaka</a>
+      </div>
+
       <ul class="menu-category">
         <!-- Förrätter -->
         <li class="starter">Bruschetta al Pomodoro - 79 kr</li>
